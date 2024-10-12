@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
-		<div class="postcard">
-			Hello
-			<div class="postcard-header">
-				<h1>My postcard</h1>
-				<img
-					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
-				/>
-			</div>
-			<div class="postcard-body">
-				<div class="body-left">
+		<div class="container bg-light rounded w-25 border mt-4">
+			<div class="d-flex">
+				<div class="mt-4 p-5 bg-light rounded w-75 justify-content-center">
+					<h1>Hello My Postcard</h1>
 					<p>Look how awesome! This is a postcard that I created from Costa Rica using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
-					<p>This is so cool, can't wait to start doing more stuff</p>
 				</div>
-				<div class="body-right">
-					<input type="text" placeholder="Some Name" />
-					<input type="text" placeholder="Some Email" />
-					<input typw="text" placeholder="Some Comment" />
+				<div class="align-content-center">
+					<img
+						src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+						alt="Chania"
+						class="w-50 mb-2"
+					/>
+					<input type="text" class="form-control mb-2" placeholder="Some Name" aria-label="Username" aria-describedby="basic-addon1" />
+					<input type="text" class="form-control mb-2" placeholder="Some Email" aria-label="Username" aria-describedby="basic-addon1" />
+					<input type="text" class="form-control mb-2" placeholder="Some Content" aria-label="Username" aria-describedby="basic-addon1" />
 				</div>
 			</div>
-			<div class="postcard-footer">
-				<button>Send My Postcard</button>
+			<div class="d-flex justify-content-center">
+				<button type="button" class="btn btn-outline-info mb-3">Send My Postcard</button>
 			</div>
 		</div>
 	</body>
